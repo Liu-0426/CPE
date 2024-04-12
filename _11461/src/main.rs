@@ -1,13 +1,15 @@
 use std::env;
 fn a(b:&str) -> String{
-    if b.len()==1 {
-        return b.to_string();
+    let mut c :i32= b.parse().unwrap();
+    let str:String = String::new();
+    let mut byte:Vec<i32> = Vec::new();
+    while c!=0 {
+        byte.push(c%2);
+        c/=2;
     }
-    let mut c = 0;
-    for i in b.as_bytes() {
-        c+=i-'0' as u8;
-    }
-    return a(&c.to_string());
+
+    str.
+    str
 }
 fn main() {
     let args:Vec<String> = env::args().collect();
